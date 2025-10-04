@@ -12,6 +12,8 @@ import {
   InputGroup,
 } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
+import profileImage from "../assets/myCard/198758288.jpg";
+import bannerGif from "../assets/myCard/tokyo.gif";
 import {
   User,
   Mail,
@@ -228,7 +230,7 @@ export default function UserDetail() {
       >
         <Card className={`animated-card mb-4 ${user.id === 0 ? '' : 'gradient-card'}`} 
               style={user.id === 0 ? {
-                backgroundImage: 'url(/src/assets/myCard/tokyo.gif)',
+                backgroundImage: `url(${bannerGif})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 position: 'relative',
@@ -252,7 +254,7 @@ export default function UserDetail() {
                 style={user.id === 0 ? {
                   width: "120px",
                   height: "120px",
-                  backgroundImage: 'url(/src/assets/myCard/198758288.jpg)',
+                  backgroundImage: `url(${profileImage})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   border: '4px solid #ffd700',

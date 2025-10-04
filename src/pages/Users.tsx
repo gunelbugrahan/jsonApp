@@ -13,6 +13,7 @@ import {
   Github,
   Linkedin,
 } from "lucide-react";
+import profileImage from "../assets/myCard/198758288.jpg";
 import type { User } from "../types/api";
 
 export default function Users() {
@@ -263,8 +264,7 @@ export default function Users() {
                               style={{
                                 width: "80px",
                                 height: "80px",
-                                backgroundImage:
-                                  "url(/src/assets/myCard/198758288.jpg)",
+                                backgroundImage: `url(${profileImage})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 border: "3px solid #ffd700",
